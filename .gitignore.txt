@@ -1,0 +1,15 @@
+# Environnement Python
+__pycache__/
+*.pyc
+.env/
+venv/
+.venv/
+
+# Chroma index (re-générable)
+/data/chroma_index/
+
+# Cache Streamlit
+.streamlit/
+
+# Fichiers temporaires
+*.log

@@ -1,0 +1,32 @@
+# Telnet (Port 23)
+- Protocole obsolète. Tout trafic est en clair.
+- Risque majeur : interception facile, aucun chiffrement.
+- Remplacer par SSH.
+Telnet (port 23) : interdit sur tout système moderne. En clair. À remplacer par SSH.
+
+
+# SMB (Port 445)
+- Utilisé pour le partage de fichiers Windows.
+- Vulnérabilités :
+  - CVE-2017-0144 (EternalBlue)
+  - Accès anonyme possible
+- Recommandations :
+  - Désactiver SMBv1
+  - Appliquer les correctifs régulièrement
+
+# NetBIOS (Ports 137-139)
+- Utilisé historiquement pour la résolution de noms Windows.
+- Fortement déconseillé sur des réseaux modernes.
+
+# SNMP (Port 161/162)
+- Surveillance réseau.
+- Risques :
+  - Community string par défaut : "public"
+  - Version 1/2c non chiffrée
+- Recommandations :
+  - Utiliser SNMPv3
+  - Restreindre l'accès à SNMP
+
+# RPC (Ports dynamiques 49152–65535)
+- Utilisé par de nombreux services Windows.
+- Difficile à sécuriser sans filtrage d'état.

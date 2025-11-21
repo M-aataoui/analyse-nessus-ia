@@ -1,0 +1,19 @@
+# Format : Port | Protocole | Service associé | Vulnérabilités ou remarques
+
+21 | TCP | FTP | Non chiffré, vulnérable aux attaques par interception. CVE-2015-3306
+22 | TCP | SSH | Cible fréquente de brute-force. Désactiver root login. CVE-2018-15473
+23 | TCP | Telnet | Obsolète, non chiffré. Fortement déconseillé. CVE-2011-4862
+25 | TCP | SMTP | Utilisé pour l'envoi de mails, peut être détourné pour le spam ou le phishing. CVE-2020-8616
+53 | UDP/TCP | DNS | Attaques d’amplification, cache poisoning. CVE-2018-5734, CVE-2019-11537
+67 | UDP | DHCP | Spoofing possible. Utiliser DHCP snooping. CVE-2021-21996
+80 | TCP | HTTP | Requêtes en clair, sujet à XSS, RFI. CVE-2021-22986
+111 | TCP/UDP | RPC / Portmapper | Cible de scans réseau. Vulnérable à la saturation. CVE-2001-0660
+135 | TCP | Microsoft RPC | Liaison COM/DCOM, utilisé pour lateral movement. CVE-2020-0601
+137 | UDP | NetBIOS Name Service | Fuite d’information sur le réseau local. CVE-2017-0144
+139 | TCP | NetBIOS Session | SMBv1 vulnérable à EternalBlue. CVE-2017-0144
+445 | TCP | SMB | Partage de fichiers Windows. Très vulnérable. CVE-2020-0796, CVE-2017-0144
+3306 | TCP | MySQL | Failles d'injection SQL possibles. CVE-2012-2122
+3389 | TCP | RDP | Protocole sensible, cible du BlueKeep. CVE-2019-0708
+5432 | TCP | PostgreSQL | Risques d'injection ou de brute-force si mal sécurisé. CVE-2013-1899
+5900 | TCP | VNC | Souvent sans mot de passe fort, accès distant facile. CVE-2006-2369
+8080 | TCP | HTTP proxy / Web server | Parfois non filtré, XSS/CSRF possible. CVE-2021-26855

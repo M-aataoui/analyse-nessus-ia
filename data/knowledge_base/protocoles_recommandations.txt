@@ -1,0 +1,10 @@
+Voici quelques protocoles couramment rencontrés dans les rapports Nessus et les recommandations associées :
+
+- HTTP : Non chiffré. Préférer HTTPS pour toutes les communications web.
+- HTTPS : Chiffré, mais vérifier que les certificats ne sont pas expirés ou faibles.
+- FTP : Non sécurisé. Remplacer par SFTP ou FTPS.
+- SSH : Protocole sécurisé. S’assurer que seule l’authentification par clé est autorisée.
+- SMB : Utilisé pour le partage de fichiers. Vérifier les versions (éviter SMBv1), appliquer les correctifs.
+- RDP : Protocole de bureau à distance. Restreindre son accès via VPN et surveiller les tentatives de connexion.
+
+Un cluster dominant en FTP ou SMB est plus critique s’il est exposé à Internet.

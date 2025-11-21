@@ -1,0 +1,28 @@
+# Types de comportements anormaux à surveiller
+
+1. Connexions sortantes vers des ports non standards
+   - Exemples : 4444, 31337, 8081, 9001
+   - Possible outil C2 (Command and Control)
+
+2. Utilisation anormale de protocoles obsolètes
+   - Telnet ou FTP sur des serveurs modernes
+   - TFTP sur des ports élevés
+
+3. Activité ICMP inhabituelle
+   - Ping excessif ou ICMP tunnelé
+   - Peut indiquer un scan ou une exfiltration
+
+4. Connexions RDP multiples depuis des adresses inconnues
+   - Activité brute-force ou pivot d’un attaquant
+
+5. Transfert de fichiers sur des ports DNS, HTTP, ou SMTP
+   - Tunnels déguisés ou exfiltration
+
+6. Trafic réseau en dehors des heures ouvrées
+   - Signaux d’activité persistante post-exploitation
+
+7. Ouverture soudaine de ports dynamiques (49152+)
+   - Services RPC exposés ou backdoors actives
+
+8. Appels DNS fréquents vers des domaines récemment enregistrés
+   - Possible C2 utilisant DNS dynamique

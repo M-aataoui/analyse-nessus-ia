@@ -1,0 +1,9 @@
+- CVSS : Score standardisé pour évaluer la sévérité des vulnérabilités.
+- Port : Canal de communication réseau (ex : 80 pour HTTP).
+- Protocole : Langage utilisé pour les échanges (HTTP, FTP, etc.).
+- Cluster : Groupe de vulnérabilités similaires détecté par IA.
+- PCA : Technique de réduction de dimensions pour la visualisation.
+- KMeans / DBSCAN : Algorithmes de regroupement automatique.
+- Anomalie : Éléments inhabituels par rapport à l’ensemble (souvent plus critiques).
+
+Ces termes doivent être compris pour interpréter correctement les rapports.

@@ -1,0 +1,12 @@
+Liste de ports sensibles à surveiller dans un rapport de vulnérabilités :
+
+- 21 (FTP) : Non chiffré, obsolète.
+- 22 (SSH) : OK mais peut être visé pour brute-force.
+- 23 (Telnet) : Très risqué. À bannir.
+- 25 (SMTP) : Risques d’exploitation s’il n’est pas bien configuré.
+- 80 (HTTP) : Non chiffré. Préférer 443.
+- 443 (HTTPS) : OK si bien configuré.
+- 3389 (RDP) : Risques d’accès à distance. Très visé.
+- 445 (SMB) : Historique de vulnérabilités graves (ex : EternalBlue).
+
+Plus le port est exposé et critique, plus la sévérité potentielle augmente.

@@ -1,0 +1,9 @@
+Catégories fréquentes de vulnérabilités dans les rapports Nessus :
+
+- Failles de configuration : Services exposés, options activées par défaut.
+- Vulnérabilités logicielles : Versions non mises à jour, failles connues (CVE).
+- Mots de passe faibles : Détection de comptes avec authentification faible.
+- Services obsolètes : Protocoles ou logiciels plus maintenus.
+- Vulnérabilités Web : XSS, injection SQL, inclusion de fichiers.
+
+Identifier le type aide à proposer une réponse adaptée (patch, hardening, monitoring).

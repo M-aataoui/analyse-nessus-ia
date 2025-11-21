@@ -1,0 +1,154 @@
+CVE-2023-23397 - Microsoft Outlook Elevation of Privilege Vulnerability
+
+Description:
+Une vulnérabilité critique dans Microsoft Outlook permet l’élévation de privilèges sans interaction de l’utilisateur. Un attaquant peut envoyer un email piégé qui déclenche automatiquement une connexion NTLM vers un serveur contrôlé à distance.
+
+Score CVSS : 9.8 (Critical)
+Composant affecté : Outlook
+Exploitation : Sans clic, à la réception de l’email
+
+Recommandations :
+- Appliquer les patchs de sécurité fournis par Microsoft (mars 2023)
+- Bloquer les ports de communication non autorisés sortants (ex : 445, 139)
+- Surveiller les connexions NTLM suspectes dans les journaux
+
+---
+
+CVE-2022-30190 - Follina - Remote Code Execution via MSDT
+
+Description:
+Cette vulnérabilité permet l’exécution de code à distance via l’appel MSDT dans Microsoft Office. Déclenchée par des documents Word malveillants contenant des liens vers des scripts.
+
+Score CVSS : 7.8 (High)
+Composant affecté : Office / MSDT
+Exploitation : Document piégé
+
+Recommandations :
+- Désactiver MSDT via la base de registre
+- Mettre à jour Office avec les correctifs de juin 2022
+- Bloquer les documents RTF ou DOC externes
+
+---
+
+CVE-2021-44228 - Log4Shell - RCE dans Apache Log4j
+
+Description:
+Injection de chaînes JNDI dans les journaux, menant à une exécution de code à distance sur les serveurs utilisant Log4j < 2.15.0.
+
+Score CVSS : 10.0 (Critical)
+Composant affecté : Log4j
+Exploitation : Chaînes utilisateur mal filtrées
+
+Recommandations :
+- Mettre à jour vers Log4j 2.17.0+
+- Désactiver les appels JNDI
+- Filtrer toutes les entrées utilisateurs
+
+---
+
+CVE-2017-0144 - EternalBlue - Exécution de code via SMBv1
+
+Description:
+Faille dans SMBv1 exploitée par WannaCry et NotPetya pour exécuter du code à distance sans authentification.
+
+Score CVSS : 8.1 (High)
+Composant affecté : SMBv1
+Exploitation : Réseau - sans authentification
+
+Recommandations :
+- Désactiver SMBv1
+- Appliquer le patch MS17-010
+- Segmenter les réseaux critiques
+
+---
+
+CVE-2021-34527 - PrintNightmare - Code execution in Windows Print Spooler
+
+Description:
+Permet l'exécution de code en tant que SYSTEM à distance ou localement via le spooler d'impression.
+
+Score CVSS : 8.8 (High)
+Composant affecté : Spouleur d'impression Windows
+Exploitation : Locale ou RPC
+
+Recommandations :
+- Désactiver Print Spooler si inutile
+- Appliquer les correctifs de juillet 2021
+
+---
+
+CVE-2020-1472 - Zerologon - Netlogon Elevation of Privilege
+
+Description:
+Permet de prendre le contrôle d’un contrôleur de domaine Windows sans mot de passe.
+
+Score CVSS : 10.0 (Critical)
+Composant affecté : Netlogon
+Exploitation : Réseau local
+
+Recommandations :
+- Appliquer le patch d’août 2020
+- Restreindre les communications Netlogon
+
+---
+
+CVE-2019-0708 - BlueKeep - RDP Remote Code Execution
+
+Description:
+Faille critique dans Remote Desktop Services permettant l’exécution de code sans authentification.
+
+Score CVSS : 9.8 (Critical)
+Composant affecté : RDP (Windows 7/2008)
+Exploitation : Réseau public
+
+Recommandations :
+- Appliquer les patchs de mai 2019
+- Activer l’authentification au niveau réseau (NLA)
+
+---
+
+CVE-2018-11776 - Apache Struts RCE via Namespace Injection
+
+Description:
+Faille dans Struts 2 permettant l’exécution de code via des URL malformées contenant un namespace manipulé.
+
+Score CVSS : 9.8 (Critical)
+Composant affecté : Apache Struts 2
+Exploitation : Injection dans l’URL
+
+Recommandations :
+- Mettre à jour vers Struts 2.5.17+
+- Désactiver les expressions OGNL non nécessaires
+
+---
+
+CVE-2022-22965 - Spring4Shell - RCE dans Spring Framework
+
+Description:
+Exécution de code via un binding de propriété mal protégé dans certaines configurations de Spring MVC.
+
+Score CVSS : 9.8 (Critical)
+Composant affecté : Spring Core
+Exploitation : HTTP POST malformé
+
+Recommandations :
+- Mettre à jour vers Spring Framework 5.3.18+
+- Désactiver la liaison de propriétés dangereuses
+
+---
+
+CVE-2014-0160 - Heartbleed - Disclosure de mémoire dans OpenSSL
+
+Description:
+Permet de lire la mémoire du serveur via une requête heartbeat manipulée. Expose des données sensibles (certificats, identifiants).
+
+Score CVSS : 5.0 (Medium)
+Composant affecté : OpenSSL 1.0.1 - 1.0.1f
+Exploitation : TLS/SSL
+
+Recommandations :
+- Mettre à jour OpenSSL >= 1.0.1g
+- Révoquer et régénérer les certificats
+
+---
+CVE-2019-19781 : concerne Citrix ADC / Gateway, pas Telnet.

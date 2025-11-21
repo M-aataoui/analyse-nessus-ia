@@ -1,0 +1,9 @@
+Actions correctrices générales en fonction de la gravité :
+
+- Informational : Documenter. Aucun correctif immédiat requis.
+- Low : Appliquer si possible. Surveiller.
+- Medium : Prioriser les mises à jour et restrictions réseau.
+- High : Patch ou désactivation urgente. Peut être exploité rapidement.
+- Critical : Correction immédiate. Peut entraîner une compromission sévère.
+
+Toute mesure doit être testée en environnement de validation avant mise en production.

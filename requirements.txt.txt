@@ -1,0 +1,11 @@
+streamlit
+pandas
+matplotlib
+seaborn
+scikit-learn
+kneed
+langchain
+langchain-community
+chromadb
+sentence-transformers
+requests

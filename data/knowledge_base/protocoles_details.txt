@@ -1,0 +1,39 @@
+# Protocole DNS (Port 53 - UDP/TCP)
+- Utilité : résolution de noms de domaine.
+- Vulnérabilités connues :
+  - DNS Cache Poisoning (empoisonnement de résolution)
+  - Amplification DDoS via requêtes ouvertes
+- Recommandations :
+  - Restreindre les serveurs récursifs au réseau interne
+  - Activer DNSSEC si possible
+  - Surveiller les flux DNS anormaux
+Port 53 = DNS. Ne pas confondre avec FTP (port 21) ou SSH (port 22). DNS est vulnérable à l’amplification via UDP.
+
+
+# Protocole SSH (Port 22 - TCP)
+- Utilité : accès distant sécurisé à un shell.
+- Vulnérabilités connues :
+  - Brute-force sur mots de passe
+  - Mauvaise gestion des clés SSH
+- Recommandations :
+  - Utiliser uniquement l’authentification par clé
+  - Désactiver l'accès root direct
+  - Mettre en place des outils comme Fail2Ban
+
+# Protocole RDP (Port 3389 - TCP)
+- Utilité : accès à distance à l’interface graphique Windows.
+- Vulnérabilités connues :
+  - CVE-2019-0708 (BlueKeep)
+  - Tentatives de brute-force ou d’accès non autorisé
+- Recommandations :
+  - Activer NLA (Network Level Authentication)
+  - Restreindre l’accès via VPN ou jump server
+  - Surveiller les connexions suspectes
+
+# Protocole FTP (Port 21 - TCP)
+- Vulnérabilités :
+  - Non chiffré, fuites de données
+  - Anonymous login si mal configuré
+- Recommandations :
+  - Remplacer par SFTP ou FTPS
+  - Interdire FTP en clair sur Internet

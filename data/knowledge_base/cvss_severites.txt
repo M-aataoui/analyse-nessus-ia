@@ -1,0 +1,9 @@
+Le score CVSS (Common Vulnerability Scoring System) permet d’évaluer la gravité d’une vulnérabilité selon une échelle de 0 à 10.
+
+- 0.0 : Informational – Pas de risque immédiat, informations à des fins d'audit.
+- 0.1 à 3.9 : Low – Vulnérabilité à faible impact, exploitation difficile ou peu de conséquences.
+- 4.0 à 6.9 : Medium – Peut être exploitée dans certaines conditions, impact modéré.
+- 7.0 à 8.9 : High – Exploitation facile ou dommages importants.
+- 9.0 à 10.0 : Critical – Risque élevé de compromission, souvent à distance et sans authentification.
+
+Une analyse correcte doit prendre en compte l’environnement (réseau interne, externe, contexte métier).
